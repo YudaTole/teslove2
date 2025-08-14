@@ -3,31 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Klik untuk Masuk</title>
+  <title>Otaku Club Creator</title>
   <style>
     body {
       margin: 0;
       height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      background: url('https://i.postimg.cc/TPY7hyr8/galaxy-background.webp') no-repeat center center/cover;
+      justify-content: center;
+      background: url('https://i.ibb.co/6brn3dj/galaxy-bg.jpg') no-repeat center center/cover;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
     }
-    img {
-      max-width: 80%;
-      max-height: 80%;
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px black;
+    }
+    .circle-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid white;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+    .circle-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 5px black;
+    }
+    .logo {
+      margin-top: 10px;
+      width: 80px;
+      height: 80px;
       cursor: pointer;
       transition: transform 0.3s ease;
-      border-radius: 10px;
     }
-    img:hover {
-      transform: scale(1.05);
+    .logo:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
-  <a href="https://yudatole.github.io/teslove/tes" target="_blank">
-    <img src="https://i.postimg.cc/rsWg75L4/anime-girl-dragon-horn-wings-2k-wallpaper-uhdpaper-com-46-5-f.jpg" alt="Klik di sini">
+  <h1>Otaku Club Creator</h1>
+  
+  <div class="circle-img">
+    <img src="https://i.ibb.co/Y8tNkkG/contoh.jpg" alt="Foto Profil">
+  </div>
+  
+  <p>Klik logo di bawah ini</p>
+  
+  <a href="https://wa.me/628123456789" target="_blank">
+    <img src="https://i.ibb.co/1rX6H2p/logo.png" alt="Logo" class="logo">
   </a>
 </body>
 </html>
