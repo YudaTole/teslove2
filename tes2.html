@@ -69,5 +69,46 @@
 </a>
 <p>Klik logo di atas ini</p>
 
+<!-- Ticker di bagian bawah -->
+<div class="ticker">
+  <div class="ticker-text">OTAKU CLUB CREATOR</div>
+</div>
+
+<style>
+/* Area ticker */
+.ticker {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* Tulisan berjalan */
+.ticker-text {
+  white-space: nowrap;
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker 10s linear infinite;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+</style>
+
 </body>
 </html>
