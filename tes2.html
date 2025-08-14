@@ -1,59 +1,73 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Otaku Club Creator</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: url('https://i.postimg.cc/nLKZ02n2/galaxy-background.webp') no-repeat center center/cover;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 8px black;
-    }
-    .circle-img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 4px solid white;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    .circle-img:hover {
-      transform: scale(1.05);
-    }
-    .circle-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    p {
-      margin-top: 20px;
-      font-size: 1.2em;
-      text-shadow: 1px 1px 5px black;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Otaku Club Creator</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.pixabay.com/photo/2016/11/18/17/20/space-1837306_960_720.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-top: 50px;
+    background: linear-gradient(270deg, #ff00ff, #00ffff, #ff0000);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s ease infinite, neonPulse 2s infinite alternate;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 40px #0ff;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes neonPulse {
+    from { text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff; }
+    to { text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff; }
+  }
+
+  img {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid white;
+    transition: transform 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+</style>
 </head>
 <body>
-  <h1>Otaku Club Creator</h1>
-  
-  <a href="https://yudatole.github.io/teslove/tes" target="_blank" class="circle-img">
-    <img src="https://i.postimg.cc/1XdZfYKm/anime-girl-bunny-ears-2k-wallpaper-uhdpaper-com-519-5-e.jpg" alt="Logo Otaku Club">
-  </a>
-  
-  <p>Klik logo di atas ini</p>
+
+<h1>Otaku Club Creator</h1>
+<a href="https://yudatole.github.io/teslove/tes">
+  <img src="https://i.postimg.cc/TwWstYj6/Whats-App-Image-2025-08-15-at-01-14-18.jpg" alt="Logo">
+</a>
+<p>Klik logo di atas ini</p>
+
 </body>
 </html>
